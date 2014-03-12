@@ -5,7 +5,7 @@
 %
 \LoadClass[12pt]{report}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{vitmsprojectreport}[2014/03/10 Custom class for VIT MS Project Report]
+\ProvidesClass{vitmsprojectreport}[2014/03/11 Custom class for VIT MS Project Report]
 
 \RequirePackage[english]{babel}
 \RequirePackage{titlesec}

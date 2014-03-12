@@ -7,6 +7,8 @@
 
 \begin{document}
 
+\pagenumbering{roman} % Set page numbering to roman style
+
 %----------------------------%
 %         Title Page         %
 %----------------------------%
@@ -43,6 +45,11 @@
 \clearpage
 \listoftables     % List of Tables
 \clearpage
+
+% Reset page counter for contents and 
+% change style to arabic
+\setcounter{page}{1}
+\pagenumbering{arabic}
 
 %======== Contents Start Here ==========%
 
