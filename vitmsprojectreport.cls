@@ -145,7 +145,7 @@
   \bfseries\fontsize{14}{16.8}\selectfont\uline{DECLARATION BY THE CANDIDATE}
   \end{center}
 
+  % TODO: Decide on the contents & layout
+
   \clearpage
 }
-
-% TODO: Decide on the contents & layout
