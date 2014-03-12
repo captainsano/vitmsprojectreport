@@ -47,17 +47,11 @@
 
 \pagestyle{plain}	% Set the page style for all the pages
 
-% Custom chapter title, according to specifications
-% \renewcommand{\@makechapterhead}[1]{
-% 	\newpage
-% 	\vspace*{\fill}
-% 	\begin{center}
-%   	{\LARGE\bf\MakeUppercase{#1}}
-%   	\end{center}
-%   	\vspace*{\fill}
-%   	\newpage
-% 	{\noindent\bf\LARGE\thechapter .\quad #1 \newline}
-% }
+% Change the title of table of contents [Use with Babel-English]
+\addto\captionsenglish{%
+  \renewcommand{\contentsname}%
+    {\hfill\bfseries\fontsize{14}{16.8}\selectfont Table of Contents\hfill}%
+}
 
 % Custom chapter title - Plain [Number]. [Title] - 14pt
 \renewcommand{\@makechapterhead}[1]{
