@@ -16,7 +16,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{listings}
 \RequirePackage{textcomp}
-\RequirePackage{ulem}
+\RequirePackage[normalem]{ulem}
 \RequirePackage{afterpage}
 
 % Specific settings for listings
@@ -54,7 +54,7 @@
 \setlength{\cftaftertoctitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\contentsname}%
-    {\hfill\bfseries\fontsize{14}{16.8}\selectfont Table of Contents\hfill}%
+    {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{Table of Contents}\hfill}%
 }
 
 % Custom chapter title - Plain [Number]. [Title] - 14pt
