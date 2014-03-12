@@ -37,3 +37,7 @@ The class has been tested using **pdflatex** and **bibtex**, 2011 distribution. 
 ###Algorithms
 
 ###Code Listings
+
+####Authors & Contributors
+
+- **Santhos Baala RS**, MS Software Engg., VIT University ('09 Batch). 
