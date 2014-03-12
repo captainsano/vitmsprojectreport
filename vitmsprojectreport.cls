@@ -10,6 +10,7 @@
 \RequirePackage[english]{babel}
 \RequirePackage{titlesec}
 \RequirePackage{lmodern}
+\RequirePackage{tocloft}
 \RequirePackage{cite}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
@@ -49,7 +50,8 @@
 
 
 % Change the title of table of contents [Use with Babel-English]
-\setlength{\cftbeforetoctitleskip}{-3em}  % Remove Vertical Margin of TOC title.
+\setlength{\cftbeforetoctitleskip}{-3em}  % Remove Top Margin of TOC title.
+\setlength{\cftaftertoctitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\contentsname}%
     {\hfill\bfseries\fontsize{14}{16.8}\selectfont Table of Contents\hfill}%
