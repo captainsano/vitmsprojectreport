@@ -14,19 +14,9 @@
 \RequirePackage{cite}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
-\RequirePackage{listings}
-\RequirePackage{textcomp}
 \RequirePackage[normalem]{ulem}
-\RequirePackage{afterpage}
-% To put a numbered chapter for bibliography
+% To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
-
-% Specific settings for listings
-\lstset{
-	basicstyle=\ttfamily\footnotesize,
-	flexiblecolumns=false,
-	fontadjust=true
-}
 
 % These three commands make up the "Times New Roman" font
 \renewcommand{\sfdefault}{phv}
