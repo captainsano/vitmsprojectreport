@@ -58,12 +58,16 @@
 }
 
 % Change the title style of list of tables [Use with Babel-English]
+\setlength{\cftbeforelottitleskip}{-3em}  % Remove Top Margin of TOC title.
+\setlength{\cftafterlottitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\listtablename}%
     {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Tables}\hfill}
 }
 
 % Change the title style of list of figures [Use with Babel-English]
+\setlength{\cftbeforeloftitleskip}{-3em}  % Remove Top Margin of TOC title.
+\setlength{\cftafterloftitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\listfigurename}%
     {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Figures}\hfill}
