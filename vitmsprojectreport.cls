@@ -185,3 +185,19 @@
 
   \clearpage
 }
+
+% Macro To Render The Executive Summary Page
+%
+% ARGS: TBD
+
+\newcommand{\makeexecsummarypage}{
+  \newpage
+
+  \begin{center}
+  \bfseries\fontsize{14}{16.8}\selectfont\uline{Executive Summary}
+  \end{center}
+
+  % TODO: Decide on the contents & layout
+
+  \clearpage
+}
