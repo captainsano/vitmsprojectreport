@@ -57,6 +57,18 @@
     {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{Table of Contents}\hfill}%
 }
 
+% Change the title style of list of tables [Use with Babel-English]
+\addto\captionsenglish{%
+  \renewcommand{\listtablename}%
+    {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Tables}\hfill}
+}
+
+% Change the title style of list of figures [Use with Babel-English]
+\addto\captionsenglish{%
+  \renewcommand{\listfigurename}%
+    {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Figures}\hfill}
+}
+
 % Custom chapter title - Plain [Number]. [Title] - 14pt
 \renewcommand{\@makechapterhead}[1]{
   {\noindent\bf\fontsize{14}{16.8}\selectfont\thechapter .\quad #1 \newline}
