@@ -90,19 +90,46 @@
 % Plain bibliography style
 \bibliographystyle{plain}
 
-% TODO:
-%	- Chapter Title in a separate page
-%	- Section Headings in uppercase
+%==========================================================================
+%                                                                         %
+%                                Macros                                   %
+%                                                                         %
+%==========================================================================
+
+% Macro To Render The Title Page
 %
-% Other Technical Specifications
-%	- All fonts in Times New Roman
-%	- Headings in 14pt Uppercase, Bold					TODO
-%	- Subheadings in 14pt TitleCase, Bold, Underline	TODO
-%	- Heading-Paragraph Spacing 30pt					TODO
-%	- Heading-Subheading Spacing 20pt					TODO
-%	- Subheading-Paragraph Spacing 20pt					TODO
-%	- Default Font Size: 12pt, 1.5 line spacing
-%	- Default LaTeX Report conventions for section numbering,
-%		figure numbering (Fig.) and table numbering (Table)
-%		can be followed
-%
+% ARGS: Title of the project, Your Name, Reg No., Guide's Name, Guide's Title
+
+\newcommand{\maketitlepage}[5]{
+  \begin{titlepage}
+  \vspace*{\fill}
+  \begin{center}
+  \bf\fontsize{20}{24}\selectfont #1\\
+  \vspace{1em}
+  \fontsize{12}{14.4}\selectfont\textsc{A Project Report\\}
+  \vspace{1em}
+  \fontsize{12}{14.4}\selectfont\textit{Submitted in partial fulfilment for the award of the degree of\\}
+  \vspace{0.75em}
+  \fontsize{18}{21.6}\selectfont MS\\
+  \vspace{0.75em}
+  \fontsize{18}{21.6}\selectfont in\\
+  \vspace{0.75em}
+  \fontsize{18}{21.6}\selectfont Sofware Engineering\\
+  \vspace{0.75em}
+  \fontsize{12}{14.4}\selectfont By\\
+  \vspace{1.5em}
+  \fontsize{20}{24}\selectfont #2, #3\\
+  \vspace{0.75em}
+  \fontsize{12}{14.4}\selectfont Under the Guidance of\\
+  \vspace{0.75em}
+  \fontsize{18}{21.6}\selectfont #4\\
+  \fontsize{18}{21.6}\selectfont #5\\
+  \vspace{0.15em}
+  \fontsize{14}{16.8}\selectfont\textsc{School Of Information Technology And Engineering\\VIT University\\}
+  \vspace{4em}
+  \includegraphics{vit.png}
+  \end{center}
+  \vspace*{\fill}
+  \end{titlepage}
+}
+
