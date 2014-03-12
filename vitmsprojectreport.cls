@@ -169,3 +169,19 @@
 
   \clearpage
 }
+
+% Macro To Render The Acknowledgement Page
+%
+% ARGS: TBD
+
+\newcommand{\makeackpage}{
+  \newpage
+
+  \begin{center}
+  \bfseries\fontsize{14}{16.8}\selectfont\uline{Acknowledgements}
+  \end{center}
+
+  % TODO: Decide on the contents & layout
+
+  \clearpage
+}
