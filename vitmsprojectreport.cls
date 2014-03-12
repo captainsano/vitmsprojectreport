@@ -18,6 +18,8 @@
 \RequirePackage{textcomp}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{afterpage}
+% To put a numbered chapter for bibliography
+\RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
 % Specific settings for listings
 \lstset{
@@ -200,4 +202,12 @@
   % TODO: Decide on the contents & layout
 
   \clearpage
+}
+
+% Macro to insert references chapter
+%
+% Args: the bibliography file
+\newcommand{\insertreferences}[1]{
+  \renewcommand{\bibname}{References}         % Change 'Bibliography' to 'References'
+  \bibliography{#1}
 }
