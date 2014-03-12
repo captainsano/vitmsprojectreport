@@ -133,3 +133,19 @@
   \end{titlepage}
 }
 
+
+% Macro To Render The Declaration Page
+%
+% ARGS: TBD
+
+\newcommand{\makedeclarationpage}{
+  \newpage
+
+  \begin{center}
+  \bfseries\fontsize{14}{16.8}\selectfont\uline{DECLARATION BY THE CANDIDATE}
+  \end{center}
+
+  \clearpage
+}
+
+% TODO: Decide on the contents & layout
