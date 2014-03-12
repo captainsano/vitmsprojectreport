@@ -96,28 +96,28 @@
   \begin{titlepage}
   \vspace*{\fill}
   \begin{center}
-  \bf\fontsize{20}{24}\selectfont #1\\
+  \textrm{\bf\fontsize{20}{24}\selectfont #1\\}
   \vspace{1em}
-  \fontsize{12}{14.4}\selectfont\textsc{A Project Report\\}
+  \textrm{\fontsize{12}{14.4}\selectfont\textsc{A Project Report\\}}
   \vspace{1em}
-  \fontsize{12}{14.4}\selectfont\textit{Submitted in partial fulfilment for the award of the degree of\\}
+  \textrm{\fontsize{12}{14.4}\selectfont\textit{Submitted in partial fulfilment for the award of the degree of\\}}
   \vspace{0.75em}
-  \fontsize{18}{21.6}\selectfont MS\\
+  \textrm{\fontsize{18}{21.6}\selectfont MS\\}
   \vspace{0.75em}
-  \fontsize{18}{21.6}\selectfont in\\
+  \textrm{\fontsize{18}{21.6}\selectfont in\\}
   \vspace{0.75em}
-  \fontsize{18}{21.6}\selectfont Sofware Engineering\\
+  \textrm{\fontsize{18}{21.6}\selectfont Sofware Engineering\\}
   \vspace{0.75em}
-  \fontsize{12}{14.4}\selectfont By\\
+  \textrm{\fontsize{12}{14.4}\selectfont By\\}
   \vspace{1.5em}
-  \fontsize{20}{24}\selectfont #2, #3\\
+  \textrm{\fontsize{20}{24}\selectfont #2, #3\\}
   \vspace{0.75em}
-  \fontsize{12}{14.4}\selectfont Under the Guidance of\\
+  \textrm{\fontsize{12}{14.4}\selectfont Under the Guidance of\\}
   \vspace{0.75em}
-  \fontsize{18}{21.6}\selectfont #4\\
-  \fontsize{18}{21.6}\selectfont #5\\
+  \textrm{\fontsize{18}{21.6}\selectfont #4\\}
+  \textrm{\fontsize{18}{21.6}\selectfont #5\\}
   \vspace{0.15em}
-  \fontsize{14}{16.8}\selectfont\textsc{School Of Information Technology And Engineering\\VIT University\\}
+  \textrm{\fontsize{14}{16.8}\selectfont\textsc{School Of Information Technology And Engineering\\VIT University\\}}
   \vspace{4em}
   \includegraphics{vit.png}
   \end{center}
