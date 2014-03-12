@@ -149,3 +149,23 @@
 
   \clearpage
 }
+
+% Macro To Render The Bonafide Page
+%
+% ARGS: TBD
+
+\newcommand{\makebonafidepage}{
+  \newpage
+
+  \begin{center}
+  \includegraphics{vit.png}
+  \vspace{0.5em}
+  \bfseries\fontsize{12}{14.4}\selectfont SCHOOL OF INFORMATION TECHNOLOGY AND ENGINEERING [SITE]\\
+  \bfseries\fontsize{12}{14.4}\selectfont SOFTWARE ENGINEERING DIVISION
+  \bfseries\fontsize{12}{14.4}\selectfont\uline{BONAFIDE CERTIFICATE}
+  \end{center}
+
+  % TODO: Decide on the contents & layout
+
+  \clearpage
+}
