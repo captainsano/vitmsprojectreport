@@ -3,7 +3,7 @@
 %
 % Author Santhos Baala RS, VIT University - Vellore.
 %
-\LoadClass[12pt]{report}
+\LoadClass[a4paper,12pt]{report}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{vitmsprojectreport}[2014/03/11 Custom class for VIT MS Project Report]
 
