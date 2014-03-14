@@ -1,0 +1,77 @@
+%
+% VIT Final Year Project Report.
+%
+% Author: Santhos Baala RS, VIT University (09MSE038)
+%
+\documentclass{vitmsprojectreport}
+
+\begin{document}
+
+\pagenumbering{roman} % Set page numbering to roman style
+
+%----------------------------%
+%         Title Page         %
+%----------------------------%
+\maketitlepage%
+{Using \LaTeX for High Quality Project Report}%
+{Santhos Baala RS}%
+{09MSE038}%   Prepend reg no with \\, in case your name is long
+{Dr. Krishna Chandramouli}%
+{Associate Professor}%
+
+%----------------------------%
+%      Declaration Page      %
+%----------------------------%
+\makedeclarationpage% Arguments TBD
+
+%----------------------------%
+%       Bonafide Page        %
+%----------------------------%
+\makebonafidepage% Arguments TBD
+
+%----------------------------%
+%    Acknowledgements Page   %
+%----------------------------%
+\makeackpage% Arguments TBD
+
+%----------------------------%
+%      Exec. Summary Page    %
+%----------------------------%
+\makeexecsummarypage{
+This document describes how to use the vitmsprojectreport class with \LaTeX\ to produce high quality typeset project report that is suitable for submission to the School of Information Technology and Engineering (SITE). The class can further be extended to various courses and department by modifying the title page and department information.
+}
+
+\tableofcontents  % Table Of Contents
+\clearpage
+\listoffigures    % List of Figures
+\clearpage
+\listoftables     % List of Tables
+\clearpage
+
+% Reset page counter for contents and 
+% change style to arabic
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%======== Contents Start Here ==========%
+
+\chapter{Introduction}
+
+\section{About the Template}
+With a basic understanding of the \LaTeX\ language and say 10 to 20 commands, an author can produce beautiful typeset project report quickly, with minimal effort. The purpose of this document is to serve as a user guide for the project report template and document its special behaviours. Examples have also been provided for common tasks such as insertion of images, table, equation, etc., that can be copied as is by the users. It is assumed that the user has a basic knowledge on working of the \LaTeX\ system. Those lacking are strongly urged to lookup some excellent literature through~\cite{kottwitz2011latex}. 
+
+Sufficient examples have been given in the document and as users request solutions for specific problems that they encounter, more will be added. However, an understanding of the \LaTeX\ system will help the user in unexplainable ways\footnote{The \LaTeX\ system is a vast ocean. That said, you can mostly get away with copy-paste skills. You have to observe the source code of the examples and learn}. The main advantage of using the custom class is that, the user need not worry about the final layout. The class may be changed during the development of the project report, the user needs to just place the latest version of the class file, without touching the content\footnote{It is always recommended to get the latest class file from the repository and compile before project report submission.}. \LaTeX, along with the custom class file gives an incredible expressive power its users so that they can focus on the semantics of the document.
+
+\section{Asking Questions}
+
+\section{Using the Class}
+
+\section{Contributing}
+
+The project is hosted on GitHub~\cite{github2014} and uses the GIT repository management system. Contributors can fork the project and send pull requests to the repository for the changes to be merged. The patch will be evaluated and if found to be good, merged into the master branch of the repository. If however, a separate template is required for other departments and courses, the project can be forked and maintained separately. Issues, pertaining to the template, such as rendering faults, can be posted in the issues section of the repo.
+
+%====== Auto-Insert Chapter for References =======
+\insertreferences{Example}
+%=================================================
+
+\end{document}
