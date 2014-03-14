@@ -182,14 +182,14 @@
 %
 % ARGS: TBD
 
-\newcommand{\makeexecsummarypage}{
+\newcommand{\makeexecsummarypage}[1]{
   \newpage
 
   \begin{center}
   \bfseries\fontsize{14}{16.8}\selectfont\uline{Executive Summary}
   \end{center}
 
-  % TODO: Decide on the contents & layout
+  #1
 
   \clearpage
 }
