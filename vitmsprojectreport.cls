@@ -137,7 +137,7 @@
 
 % Macro To Render The Declaration Page
 %
-% ARGS: TBD
+% ARGS: None (Cached by title page)
 
 \newcommand{\makedeclarationpage}{
   \newpage
