@@ -223,7 +223,7 @@
 
 % Macro To Render The Executive Summary Page
 %
-% ARGS: TBD
+% ARGS: The executive summary text
 
 \newcommand{\makeexecsummarypage}[1]{
   \newpage
