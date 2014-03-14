@@ -17,7 +17,7 @@ The class has been extended from the standard **report** class, so whatever appl
 - **report.tex** - This is where you'll have to place your content.
 - **Biblography.bib** - You have to place your bibliography items in this file, in the standard bibtex format.
 - **vit.png** - The official VIT Logo. Don't touch this!
-- **example.\*** - Documents, related to example project report.
+- **example.tex** - An example project report. Illustrates how to use the template.
 
 Your LaTeX compiler will generate many files that may look like junk, \*.toc, \*.lof, \*.blg, \*.aux, \*.log, \*.bbl, etc. However, these files act like a cache and store useful pieces of information for later reference. They can be regenerated anytime by compiling your .tex file.
 
