@@ -17,6 +17,7 @@ The class has been extended from the standard **report** class, so whatever appl
 - **report.tex** - This is where you'll have to place your content.
 - **Biblography.bib** - You have to place your bibliography items in this file, in the standard bibtex format.
 - **vit.png** - The official VIT Logo. Don't touch this!
+- **example.\*** - Documents, related to example project report.
 
 Your LaTeX compiler will generate many files that may look like junk, \*.toc, \*.lof, \*.blg, \*.aux, \*.log, \*.bbl, etc. However, these files act like a cache and store useful pieces of information for later reference. They can be regenerated anytime by compiling your .tex file.
 
@@ -24,20 +25,11 @@ Your LaTeX compiler will generate many files that may look like junk, \*.toc, \*
 
 The class has been tested using **pdflatex** and **bibtex**, 2011 distribution. The specific steps for compilation can be obtained from your TeX distribution. From the command line, the generic procedure is to compile with: **pdflatex** -> **bibtex** -> **pdflatex** -> **pdflatex** in order. We need to compile these many times because LaTeX has to make a few passes to resolve the references. Finally, you get a pdf output file, **report.pdf**.
 
-###Citations
+###HOW-TO
 
-###Cross-References
+The example files are under development. It contains copy-pastable code for various tasks. example.tex is under active development, make sure to check it every night.
 
-###Images
-
-###Tables
-
-###Lists
-
-###Algorithms
-
-###Code Listings
-
-####Authors & Contributors
+###Authors & Contributors
 
 - **Santhos Baala RS**, MS Software Engg., VIT University ('09 Batch). 
+- **Dr. Krishna Chandramouli**, Associate Professor, SITE, VIT University.
