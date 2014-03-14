@@ -12,6 +12,7 @@
 \RequirePackage{lmodern}
 \RequirePackage{tocloft}
 \RequirePackage{cite}
+\RequirePackage{hyperref}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage[normalem]{ulem}
@@ -40,6 +41,8 @@
 
 \pagestyle{plain}	% Set the page style for all the pages
 
+% Change the Hypperref Style to use roman font family
+\renewcommand\UrlFont{\rmfamily}
 
 % Change the title of table of contents [Use with Babel-English]
 \setlength{\cftbeforetoctitleskip}{-3em}  % Remove Top Margin of TOC title.
