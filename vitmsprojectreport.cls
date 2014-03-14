@@ -41,6 +41,13 @@
 
 \pagestyle{plain}	% Set the page style for all the pages
 
+% Change the footnote rule style
+\renewcommand\footnoterule{%
+  \vspace{0.25cm}
+  \hrule\@width.4\columnwidth
+  \vspace{0.25cm}
+}
+
 % Change the Hypperref Style to use roman font family
 \renewcommand\UrlFont{\rmfamily}
 
