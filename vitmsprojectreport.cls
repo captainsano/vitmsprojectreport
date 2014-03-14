@@ -96,6 +96,12 @@
 % ARGS: Title of the project, Your Name, Reg No., Guide's Name, Guide's Title
 
 \newcommand{\maketitlepage}[5]{
+  \def\vitprojecttitle{#1} % Cache the project title for later use
+  \def\vitauthorname{#2}  % Cache the author name for later use
+  \def\vitauthorregno{#3}       % Cache the author regno for later use
+  \def\vitguidename{#4}   % Cache the guide name for later use
+  \def\vitguidetitle{#5}  % Cache the guide title for later use
+
   \begin{titlepage}
   \vspace*{\fill}
   \begin{center}
@@ -140,7 +146,16 @@
   \bfseries\fontsize{14}{16.8}\selectfont\uline{DECLARATION BY THE CANDIDATE}
   \end{center}
 
-  % TODO: Decide on the contents & layout
+  \noindent
+  I here by declare that the project report entitled \textbf{``\vitprojecttitle''} submitted by me to VIT University, Vellore in partial fulfilment of the requirement for the award of the degree of \textbf{M.S. (Software Engineering)} is a record of bonafide project work carried out by us under the guidance of \textbf{\vitguidename~(\vitguidetitle)}. I further declare that the work reported in this project has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.
+
+  \noindent
+  \linebreak
+  Place: Vellore \hspace{\stretch{1}} Signature of the Candidate\\
+  Date:\\  
+  \\
+  \vspace{1.0cm}
+  \hspace{\stretch{1}} \vitauthorname (\vitauthorregno)
 
   \clearpage
 }
