@@ -147,7 +147,7 @@
   \end{center}
 
   \noindent
-  I here by declare that the project report entitled \textbf{``\vitprojecttitle''} submitted by me to VIT University, Vellore in partial fulfilment of the requirement for the award of the degree of \textbf{M.S. (Software Engineering)} is a record of bonafide project work carried out by us under the guidance of \textbf{\vitguidename~(\vitguidetitle)}. I further declare that the work reported in this project has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.
+  I here by declare that the project report titled, \textbf{``\vitprojecttitle''} submitted by me to VIT University, Vellore in partial fulfilment of the requirement for the award of the degree of \textbf{M.S. (Software Engineering)} is a record of bonafide project work carried out by us under the guidance of \textbf{\vitguidename~(\vitguidetitle)}. I further declare that the work reported in this project has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.
 
   \noindent
   \linebreak
@@ -176,7 +176,7 @@
   \end{center}
 
   \noindent
-  This is to certify that the project report titled \textbf{``\vitprojecttitle''}, submitted by \textbf{\vitauthorname~(\vitauthorregno)} to VIT University, Vellore in partial fulfillment of the requirement for the award of the degree of M.S. (Software Engineering) is a record of bonafide work carried out by him/her under my guidance. The project fulfills the requirements as per the regulations of this institute and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.\\
+  This is to certify that the project report titled, \textbf{``\vitprojecttitle''}, submitted by \textbf{\vitauthorname~(\vitauthorregno)} to VIT University, Vellore in partial fulfillment of the requirement for the award of the degree of M.S. (Software Engineering) is a record of bonafide work carried out by him/her under my guidance. The project fulfills the requirements as per the regulations of this institute and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.\\
 
   \vspace{1.5cm}
 
