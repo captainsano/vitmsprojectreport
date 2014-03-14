@@ -155,7 +155,7 @@
   Date:\\  
   \\
   \vspace{1.0cm}
-  \hspace{\stretch{1}} \vitauthorname (\vitauthorregno)
+  \hspace{\stretch{1}} \vitauthorname~(\vitauthorregno)
 
   \clearpage
 }
