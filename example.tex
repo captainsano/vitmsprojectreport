@@ -108,7 +108,23 @@ The user can generate the title page using the \verb+\maketitlepage+ command. Th
 \label{fig:maketitlepage_syntax}
 \end{figure}
 
-Note that you should always set the title page to be the first page of the document, so issue this command right after the document begins. The template also collects information like your name and regno when you declare the title page so that it can be auto-inserted into other pages like declaration and bonafide. Long names will automatically push the register number to the next line. However, to be safe, prepend your RegNo with \textbackslash\textbackslash, for e.g \verb+{\\09MSE038}+, only if your name is long.
+Note that you should always set the title page to be the first page of the document, so issue this command right after the document begins. The template also collects information like your name and regno when you declare the title page so that it can be auto-inserted into other pages like declaration and bonafide. The following subsections d
+
+\subsection{Project Title}
+
+Your project title should be placed here. If your title is long and you are not satisfied with the way the lines break, use \textbackslash\textbackslash\ to insert line breaks at suitable locations. Note the inclusion of blank space after the backslashes.\\ E.g. \verb+{A very very\\ long long title}+.
+
+\subsection{Regno}
+
+Supply your register number here. A long name will automatically push the register number to the next line. However, to be safe, prepend your RegNo with \textbackslash\textbackslash.\\ E.g. \verb+{\\09MSE038}+.
+
+\subsection{Guide Name}
+
+Your guide's name goes here. Make sure to add your guide's title too, Prof., Dr., etc. Also, be sure to add a non-breaking space ``$\sim$'' after the title so that unintended line breaks are prevented. Follow the regular convention of first name, last name.\\ E.g. \verb+{Prof.~Robert}+ or \verb+{Dr.~John}+.
+
+\subsection{Guide Title}
+
+Your Guide's title(designation) goes here. Do not abbreviate anything.\\ E.g \verb+{Assistant Professor (Senior)}+.
 
 \section{Declartion Page}
 
