@@ -119,6 +119,7 @@ Your project title should be placed here. If your title is long and you are not 
 Supply your register number here. A long name will automatically push the register number to the next line. However, to be safe, prepend your RegNo with \textbackslash\textbackslash.\\ E.g. \verb+{\\09MSE038}+.
 
 \subsection{Guide Name}
+\label{subsec:guide_name}
 
 Your guide's name goes here. Make sure to add your guide's title too, Prof., Dr., etc. Also, be sure to add a non-breaking space ``$\sim$'' after the title so that unintended line breaks are prevented. Follow the regular convention of first name, last name.\\ E.g. \verb+{Prof.~Robert}+ or \verb+{Dr.~John}+.
 
@@ -128,19 +129,52 @@ Your Guide's title(designation) goes here. Do not abbreviate anything.\\ E.g \ve
 
 \section{Declartion Page}
 
-TODO
+Use \verb+\makedeclarationpage+ command, rest is automatically generated!
 
 \section{Bonafide Page}
 
-TODO
+Use \verb+\makebonafidepage+ command, rest is automatically generated!
 
 \section{Acknowledgement Page}
 
-TODO
+Use \verb+\makeackpage+ command to generate the page. The generated text is more than sufficient for acknowledgement. However, if there is a request for custom writeup for the acknowledgement page, we'll consider that\footnote{We don't want to kill creativity!}. There are three arguments to this page as given in \figurename~\ref{fig:makeackpage_syntax}. Make sure to prepend the names with appropriate titles, Mr, Dr, etc., and remember to give a non-breaking space character just after the title as you did for your guide's name~\ref{subsec:guide_name}
+
+\begin{figure}[htb]
+\centering
+\hrulefill
+\begin{verbatim}
+\makeackpage
+{Dean Name}
+{Program Manager Name}
+{Year Co-Ordinator Name}
+\end{verbatim}
+\hrulefill
+\caption{The syntax of \textbackslash makeackpage command.}
+\label{fig:makeackpage_syntax}
+\end{figure}
 
 \section{Executive Summary Page}
 
-TODO
+The command \verb+\makeexecsummarypage+ creates the executive summary page. The only argument to this function is your executive summary. Keep it down to 1-2 paragraphs. An example is given in \figurename~\ref{fig:makeexecsummarypage_sample}.
+
+\begin{figure}[htb]
+\centering
+\hrulefill
+\begin{verbatim}
+\makeexecsummarypage{
+This document describes how to use the vitmsprojectreport
+class with \LaTeX\ to produce high quality typeset project
+report that is suitable for submission to the School of 
+Information Technology and Engineering (SITE). The class 
+can further be extended to various courses and department 
+by modifying the title page and department information.
+}
+\end{verbatim}
+\hrulefill
+\caption{Example usage of the \textbackslash makeexecsummarypage command.}
+\label{fig:makeexecsummarypage_sample}
+\end{figure}
+
 
 %====== Auto-Insert Chapter for References =======
 \insertreferences{Example}
