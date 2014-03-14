@@ -18,6 +18,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage[normalem]{ulem}
+\RequirePackage{enumitem}
 % To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
@@ -28,6 +29,22 @@
 
 % Set to 1.5 line spacing
 \setstretch{1.5}
+
+% Remove natural indentation for lists
+\let\originalItemize\itemize
+\renewcommand{\itemize}{
+  \originalItemize[itemsep=0.05cm,leftmargin=*]
+}
+
+\let\originalEnumerate\enumerate
+\renewcommand{\enumerate}{
+  \originalEnumerate[itemsep=0.05cm,leftmargin=*]
+}
+
+\let\originalDescription\description
+\renewcommand{\description}{
+  \originalDescription[itemsep=0.05cm,leftmargin=*]
+}
 
 % A4 Paper and Required Margin for one-side printing
 \RequirePackage[a4paper, top=2cm, bottom=2cm, left=4.0cm, right=2cm]{geometry}
