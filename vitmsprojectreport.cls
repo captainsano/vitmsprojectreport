@@ -9,10 +9,12 @@
 
 \RequirePackage[english]{babel}
 \RequirePackage{titlesec}
+\RequirePackage{setspace}
 \RequirePackage{lmodern}
 \RequirePackage{tocloft}
 \RequirePackage{cite}
 \RequirePackage{hyperref}
+\RequirePackage{footmisc}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
 \RequirePackage[normalem]{ulem}
@@ -25,7 +27,7 @@
 \renewcommand{\ttdefault}{pcr}
 
 % Set to 1.5 line spacing
-\linespread{1.5}
+\setstretch{1.5}
 
 % A4 Paper and Required Margin for one-side printing
 \RequirePackage[a4paper, top=2cm, bottom=2cm, left=4.0cm, right=2cm]{geometry}
@@ -47,6 +49,9 @@
   \hrule\@width.4\columnwidth
   \vspace{0.25cm}
 }
+
+% Set the footnote font size
+\renewcommand\footnotelayout{\fontsize{10}{12}\selectfont}
 
 % Change the Hypperref Style to use roman font family
 \renewcommand\UrlFont{\rmfamily}
