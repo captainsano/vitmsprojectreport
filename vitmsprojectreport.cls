@@ -96,7 +96,7 @@
 % ARGS: Title of the project, Your Name, Reg No., Guide's Name, Guide's Title
 
 \newcommand{\maketitlepage}[5]{
-  \def\vitprojecttitle{#1} % Cache the project title for later use
+  \def\vitprojecttitle{{\let\\=\relax #1}} % Cache the project title for later use
   \def\vitauthorname{#2}  % Cache the author name for later use
   \def\vitauthorregno{#3}       % Cache the author regno for later use
   \def\vitguidename{#4}   % Cache the guide name for later use
