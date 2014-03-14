@@ -175,7 +175,30 @@
   \bfseries\fontsize{12}{14.4}\selectfont\uline{BONAFIDE CERTIFICATE}
   \end{center}
 
-  % TODO: Decide on the contents & layout
+  \noindent
+  This is to certify that the project report titled \textbf{``\vitprojecttitle''}, submitted by \textbf{\vitauthorname~(\vitauthorregno)} to VIT University, Vellore in partial fulfillment of the requirement for the award of the degree of M.S. (Software Engineering) is a record of bonafide work carried out by him/her under my guidance. The project fulfills the requirements as per the regulations of this institute and in my opinion meets the necessary standards for submission. The contents of this report have not been submitted and will not be submitted either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.\\
+
+  \vspace{1.5cm}
+
+  \begin{flushright}
+  \textbf{
+  \vitguidename\hspace*{\stretch{0.36}}\\
+  Internal Guide\hspace*{\stretch{0.30}}\\
+  }
+  \vitguidetitle,\hspace*{\stretch{0.25}}\\
+  School Of Information Technology \& Engineering\hspace*{\stretch{0}}
+  \end{flushright}
+
+  \vspace{1cm}
+
+  \hrule
+
+  \vspace{2.0cm}
+  
+  \textbf{
+  Internal Examiner\hspace*{\fill}External Examiner{\hspace*{\stretch{0.1}}}
+  }
+
 
   \clearpage
 }
