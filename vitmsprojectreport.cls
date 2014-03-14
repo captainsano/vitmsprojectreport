@@ -162,7 +162,7 @@
 
 % Macro To Render The Bonafide Page
 %
-% ARGS: TBD
+% ARGS: None (Cached by title page)
 
 \newcommand{\makebonafidepage}{
   \newpage
