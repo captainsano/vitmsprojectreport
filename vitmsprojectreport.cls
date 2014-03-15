@@ -3,9 +3,22 @@
 %
 % Author Santhos Baala RS, VIT University - Vellore.
 %
-\LoadClass[a4paper,12pt]{report}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{vitmsprojectreport}[2014/03/11 Custom class for VIT MS Project Report]
+
+\def\vitdraftmode{0}      % Declare Draft Mode as false
+
+\DeclareOption{draft}{
+  \def\vitdraftmode{1}
+}
+\ProcessOptions
+
+% Load report in draft mode if specified
+\ifx\vitdraftmode1
+\LoadClass[a4paper,12pt,draft]{report}
+\else
+\LoadClass[a4paper,12pt]{report}
+\fi
 
 \RequirePackage[english]{babel}
 \RequirePackage{titlesec}
