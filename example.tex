@@ -7,51 +7,14 @@
 
 \begin{document}
 
-\pagenumbering{roman} % Set page numbering to roman style
-
-%----------------------------%
-%         Title Page         %
-%----------------------------%
-\maketitlepage%
-{Using \LaTeX\ for High Quality\\ Project Report Generation}%
-{Santhos Baala RS}%
-{09MSE038}%   Prepend reg no with \\, in case your name is long
-{Dr.~Krishna Chandramouli}%
-{Associate Professor}%
-
-%----------------------------%
-%      Declaration Page      %
-%----------------------------%
-\makedeclarationpage%
-
-%----------------------------%
-%       Bonafide Page        %
-%----------------------------%
-\makebonafidepage%
-
-%----------------------------%
-%    Acknowledgements Page   %
-%----------------------------%
-\makeackpage%
-{Dr.~Sankaran}%
-{Prof.~Jayaram Reddy A}%
-{Dr.~Krishna Chandramouli}%
-
-%----------------------------%
-%      Exec. Summary Page    %
-%----------------------------%
-\makeexecsummarypage{
-This document describes how to use the vitmsprojectreport class with \LaTeX\ to produce high quality typeset project report that is suitable for submission to the School of Information Technology and Engineering (SITE). The class can further be extended to various courses and department by modifying the title page and department information.
-}
-
-\tableofcontents  % Table Of Contents
-\listoffigures    % List of Figures
-\listoftables     % List of Tables
-
-% Reset page counter for contents and 
-% change style to arabic
-\setcounter{page}{1}
-\pagenumbering{arabic}
+\makestartingpages
+{Using \LaTeX\ for High Quality\\ Project Report Generation}
+{Santhos Baala RS}{09MSE038}
+{Dr.~Krishna Chandramouli}{Associate Professor}
+{Dr.~Sankaran}
+{Prof.~Jayaram Reddy A}
+{Dr.~Krishna Chandramouli}
+{This document describes how to use the vitmsprojectreport class with \LaTeX\ to produce high quality typeset project report that is suitable for submission to the School of Information Technology and Engineering (SITE). The class can further be extended to various courses and department by modifying the title page and department information.}
 
 %======== Contents Start Here ==========%
 

@@ -7,51 +7,16 @@
 
 \begin{document}
 
-\pagenumbering{roman} % Set page numbering to roman style
-
-%----------------------------%
-%         Title Page         %
-%----------------------------%
-\maketitlepage%
-{Your Project Title}%
-{Your Name}%
-{Reg No}%   Prepend reg no with \\, in case your name is long
-{Guide's Name}%
-{Title}%
-
-%----------------------------%
-%      Declaration Page      %
-%----------------------------%
-\makedeclarationpage
-
-%----------------------------%
-%       Bonafide Page        %
-%----------------------------%
-\makebonafidepage
-
-%----------------------------%
-%    Acknowledgements Page   %
-%----------------------------%
-\makeackpage%
-{Dr.~Sankaran V}%
-{Prof.~Jayaram Reddy A}%
-{Dr.~Krishna Chandramouli}%
-
-%----------------------------%
-%      Exec. Summary Page    %
-%----------------------------%
-\makeexecsummarypage{
-	Your content goes here.
+\makestartingpages
+{Your Project Title}
+{Your Name}{Your RegNo}
+{Guide Name}{Guide Title}
+{Dean Name}
+{Program Manager Name}
+{Year Co-ordinator Name}
+{
+	Your Executive Summary goes here.
 }
-
-\tableofcontents  % Table Of Contents
-\listoffigures    % List of Figures
-\listoftables     % List of Tables
-
-% Reset page counter for contents and 
-% change style to arabic
-\setcounter{page}{1}
-\pagenumbering{arabic}
 
 %======== Contents Start Here ==========%
 
