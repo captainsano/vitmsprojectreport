@@ -29,6 +29,8 @@
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{footmisc}
 \RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
 \RequirePackage{xcolor}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{enumitem}
