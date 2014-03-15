@@ -3,7 +3,9 @@
 %
 % Author: Santhos Baala RS, VIT University (09MSE038)
 %
-\documentclass{vitmsprojectreport}
+\documentclass{../vitmsprojectreport}
+% IF YOU DECIDE TO COPY THE EXAMPLE FILE
+% MAKE SURE TO CHANGE THE ABOVE PATH
 
 \begin{document}
 
@@ -310,15 +312,29 @@ Figures are handled in the standard \LaTeX\ manner. An minimalistic example is g
 \label{fig:figure_sample}
 \end{figure}
 
-The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment. The options passed to the environment is the figure placement priority preference, h - at the current location, t - top and b - bottom. \verb+\centering+ indicates that the figure and caption should be placed at the centre. \verb+\includegraphics+ is self explanatory, with the width option and the source file. Note that the source file does not specify the file extension, we let \LaTeX\ choose the best available format automatically.
+The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment. The options passed to the environment is the figure placement priority preference, h - at the current location, t - top and b - bottom. \verb+\centering+ indicates that the figure and caption should be placed at the centre. \verb+\includegraphics+ is self explanatory, with the width option and the source file. The source file extension is optional, left blank, \LaTeX\ chooses the best available format automatically. The rest of the section contains image inclusion and subfigure examples.
 
-A few examples of figures have been put up here. Check the source tex of this document to understand more.
-
-\begin{figure}[t]
+\begin{figure}[htb]
 \centering
-\includegraphics[width=0.5\textwidth]{105003.jpg}
-\caption{Framework overview}
-\label{fig:framework}
+\hrulefill
+\begin{verbatim}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{images/105003.jpg}
+\caption{The big cat}
+\label{fig:big_cat}
+\end{figure}
+\end{verbatim}
+\hrulefill
+\caption{Using 0.5 times the text space to place the image}
+\label{fig:big_cat_inclusion}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.5\textwidth]{images/105003.jpg}
+\caption{The big cat}
+\label{fig:big_cat}
 \end{figure}
 
 \section{Tables}
