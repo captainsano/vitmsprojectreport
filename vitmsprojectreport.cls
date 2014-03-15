@@ -34,6 +34,9 @@
 \RequirePackage{xcolor}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{enumitem}
+\RequirePackage{algorithm2e}
+\RequirePackage{algorithmicx}
+\RequirePackage{algpseudocode}
 % To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
@@ -93,6 +96,11 @@
 
 % Change the Hypperref Style to use roman font family
 \renewcommand\UrlFont{\rmfamily}
+
+% Change the algorithm environment to behave as a floating figure
+\renewenvironment{algorithm}
+{\begin{figure}[htb]\hrulefill}
+{\vspace{-2.35em}\hrulefill\end{figure}}
 
 % Change the title of table of contents [Use with Babel-English]
 \setlength{\cftbeforetoctitleskip}{-3em}  % Remove Top Margin of TOC title.
