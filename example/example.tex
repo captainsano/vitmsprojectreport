@@ -294,25 +294,7 @@ Elements that are embedded in a text document are termed as floating structures.
 
 \section{Figures}
 
-Figures are handled in the standard \LaTeX\ manner. An minimalistic example is given in \figurename~\ref{fig:figure_sample}.
-
-\begin{figure}[htb]
-\centering
-\hrulefill
-\begin{verbatim}
-\begin{figure}[htb]
-\centering
-\includegraphics[width=2.5in]{myfigure}
-\caption{My figure caption.}
-\label{fig:identify_the_figure}
-\end{figure}
-\end{verbatim}
-\hrulefill
-\caption{Embedding a figure.}
-\label{fig:figure_sample}
-\end{figure}
-
-The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment. The options passed to the environment is the figure placement priority preference, h - at the current location, t - top and b - bottom. \verb+\centering+ indicates that the figure and caption should be placed at the centre. \verb+\includegraphics+ is self explanatory, with the width option and the source file. The source file extension is optional, left blank, \LaTeX\ chooses the best available format automatically. The rest of the section contains image inclusion and subfigure examples.
+Figures are handled in the standard \LaTeX\ manner. An minimalistic example is given in \figurename~\ref{fig:figure_sample}. The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment. The options passed to the environment is the figure placement priority preference, h - at the current location, t - top and b - bottom. \verb+\centering+ indicates that the figure and caption should be placed at the centre. \verb+\includegraphics+ is self explanatory, with the width option and the source file. The source file extension is optional, left blank, \LaTeX\ chooses the best available format automatically. The rest of the section contains image inclusion and subfigure examples. The output generated is \figurename~\ref{fig:big_cat}.
 
 \begin{figure}[htb]
 \centering
@@ -327,7 +309,7 @@ The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment
 \end{verbatim}
 \hrulefill
 \caption{Using 0.5 times the text space to place the image}
-\label{fig:big_cat_inclusion}
+\label{fig:figure_sample}
 \end{figure}
 
 \begin{figure}[ht!]
@@ -337,6 +319,113 @@ The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment
 \label{fig:big_cat}
 \end{figure}
 
+\subsection{Sub-Figures}
+
+Figures inside figures. The subfigures are suitable when you want to explain a progressive concept through images. For example, a solar eclipse, amoeba fisson, etc. \figurename~\ref{fig:subfigure_sample} partially lists the code for rendering subfigures\footnote{Refer the source code of this document for more}, \figurename~\ref{fig:mitosis_steps} is the output.
+
+\begin{figure}
+\centering
+\hrulefill
+\begin{verbatim}
+\begin{figure}[htb]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/interphase.png}
+		\caption{Interphase}
+		\label{fig:mitosis_interphase}
+	\end{subfigure}
+	% Spacing %
+	\hspace{0.1\textwidth}
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/prophase.png}
+		\caption{Prophase}
+		\label{fig:mitosis_prophase}
+	\end{subfigure}
+	% Spacing %
+	\linebreak\linebreak
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/prometaphase.png}
+		\caption{Prometaphase}
+		\label{fig:mitosis_prometaphase}
+	\end{subfigure}
+	% Spacing %
+	\hspace{0.1\textwidth}
+	% Spacing %
+	...
+	...
+	...
+	% End of subfigures
+	\caption{The steps of mitosis.}
+	\label{fig:mitosis}
+\end{figure}
+\end{verbatim}
+\hrulefill
+\caption{Subfigure example.}
+\label{fig:subfigure_sample}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/interphase.png}
+		\caption{Interphase}
+		\label{fig:mitosis_interphase}
+	\end{subfigure}
+	% Spacing %
+	\hspace{0.1\textwidth}
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/prophase.png}
+		\caption{Prophase}
+		\label{fig:mitosis_prophase}
+	\end{subfigure}
+	% Spacing %
+	\linebreak\linebreak
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/prometaphase.png}
+		\caption{Prometaphase}
+		\label{fig:mitosis_prometaphase}
+	\end{subfigure}
+	% Spacing %
+	\hspace{0.1\textwidth}
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/metaphase.png}
+		\caption{Metaphase}
+		\label{fig:mitosis_metaphase}
+	\end{subfigure}
+	% Spacing %
+	\linebreak\linebreak
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/anaphase.png}
+		\caption{Anaphase}
+		\label{fig:mitosis_anaphase}
+	\end{subfigure}
+	% Spacing %
+	\hspace{0.1\textwidth}
+	% Spacing %
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{images/telophase.png}
+		\caption{Telophase}
+		\label{fig:mitosis_telophase}
+	\end{subfigure}
+	% Spacing %
+	\linebreak\linebreak
+	% Spacing %
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{images/cytokinesis.png}
+		\caption{Cytokinesis}
+		\label{fig:mitosis_cytokinesis}
+	\end{subfigure}        
+	% End of subfigures
+	\caption{The steps of mitosis.}
+	\label{fig:mitosis_steps}
+\end{figure}
+	
 \section{Tables}
 
 \section{Algorithms}
