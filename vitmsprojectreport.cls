@@ -13,7 +13,7 @@
 \RequirePackage{lmodern}
 \RequirePackage{tocloft}
 \RequirePackage{cite}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage{footmisc}
 \RequirePackage{graphicx}
 \RequirePackage{xcolor}
@@ -26,6 +26,12 @@
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\rmdefault}{ptm}
 \renewcommand{\ttdefault}{pcr}
+
+% Remove the ugly boxes around links
+\hypersetup{
+    colorlinks=false,
+    allbordercolors={1 1 1},
+}
 
 % Set to 1.5 line spacing
 \setstretch{1.5}
