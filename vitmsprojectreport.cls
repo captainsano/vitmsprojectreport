@@ -86,7 +86,7 @@
 \setlength{\cftafterlottitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\listtablename}%
-    {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Tables}\hfill}
+    {\clearpage\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Tables}\hfill}
 }
 
 % Change the title style of list of figures [Use with Babel-English]
@@ -94,7 +94,7 @@
 \setlength{\cftafterloftitleskip}{1em}  % Reduce Bottom Margin of TOC title.
 \addto\captionsenglish{%
   \renewcommand{\listfigurename}%
-    {\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Figures}\hfill}
+    {\clearpage\hfill\bfseries\fontsize{14}{16.8}\selectfont \uline{List of Figures}\hfill}
 }
 
 % Custom chapter title - Plain [Number]. [Title] - 14pt
