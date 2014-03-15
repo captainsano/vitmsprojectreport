@@ -285,6 +285,48 @@ Other elements in the document can be referenced via the \verb+\ref+ command at 
 
 TODO
 
+%------- Floating Structures -------%
+\chapter{Floating Structures}
+
+Elements that are embedded in a text document are termed as floating structures. These include figures, tables, equations, algorithms, etc. In the following sections, examples have been provided on how to use these elements and how the template behaviour can be controlled through the various options available.
+
+\section{Figures}
+
+Figures are handled in the standard \LaTeX\ manner. An minimalistic example is given in \figurename~\ref{fig:figure_sample}.
+
+\begin{figure}[htb]
+\centering
+\hrulefill
+\begin{verbatim}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=2.5in]{myfigure}
+\caption{My figure caption.}
+\label{fig:identify_the_figure}
+\end{figure}
+\end{verbatim}
+\hrulefill
+\caption{Embedding a figure.}
+\label{fig:figure_sample}
+\end{figure}
+
+The figure is placed inside the \verb+\begin{figure}...\end{figure}+ environment. The options passed to the environment is the figure placement priority preference, h - at the current location, t - top and b - bottom. \verb+\centering+ indicates that the figure and caption should be placed at the centre. \verb+\includegraphics+ is self explanatory, with the width option and the source file. Note that the source file does not specify the file extension, we let \LaTeX\ choose the best available format automatically.
+
+A few examples of figures have been put up here. Check the source tex of this document to understand more.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.5\textwidth]{105003.jpg}
+\caption{Framework overview}
+\label{fig:framework}
+\end{figure}
+
+\section{Tables}
+
+\section{Algorithms}
+
+\chapter{Equations}
+
 %====== Auto-Insert Chapter for References =======
 \insertreferences{Example}
 %=================================================
