@@ -270,6 +270,30 @@
   \clearpage
 }
 
+% Single Macro to generate the default pages.
+% Functions like a Façade to the individual macros.
+%
+% Args: (TitlePage + Ack + Exec)
+%       Title of the project, Your Name, Reg No., Guide's Name, Guide's Title,
+%       Dean, Program Manager, Year Co-Ordinator,
+%       The executive summary text
+\newcommand{\makestartingpages}[9]{
+  \pagenumbering{roman} % Set page numbering to roman style
+
+  \maketitlepage{#1}{#2}{#3}{#4}{#5}      % Title Page
+  \makedeclarationpage                    % Declaration Page
+  \makebonafidepage                       % Bonafide Page
+  \makeackpage{#6}{#7}{#8}                % Acknowledgements Page
+  \makeexecsummarypage{#9}                % Exec. Summary Page
+  
+  \tableofcontents  % Table Of Contents
+  \listoffigures    % List of Figures
+  \listoftables     % List of Tables
+
+  \setcounter{page}{1}
+  \pagenumbering{arabic}
+}
+
 % Macro to insert references chapter
 %
 % Args: the bibliography file
