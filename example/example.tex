@@ -452,6 +452,45 @@ Figures inside figures. The subfigures are suitable when you want to explain a p
 
 \section{Algorithms}
 
+In this template, algorithms are treated as figures for the sake of simplicity. They too get listed in the list of figures. Similar to a figure, algorithms need to be placed in the \verb+{algorithm}+ environment. The actual algorithm is represented by the statements inside the \verb+{algorithmic}+ environment. It defines its own set of commands. We strongly recommend the algorithmic environment compared to other packages offering similar functionality since it has been tested on the template and has a compact vocabulary. \figurename~\ref{fig:algorithm_sample} lists the algorithmic code for generating the output in \figurename~\ref{algo:euclid_algorithm}. Learn more about the algorithmic commands from~\cite{algorithmicx2005}.
+
+\begin{figure}
+\centering
+\hrulefill
+\begin{verbatim}
+\begin{algorithm}
+\begin{algorithmic}[1]
+\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+\State $r\gets a\bmod b$
+\State $a\gets b$
+\State $b\gets r$
+\State $r\gets a\bmod b$
+\State \textbf{return} $b$\Comment{The gcd is b}
+\EndProcedure
+\end{algorithmic}
+\caption{Euclid's Algorithm}
+\label{algo:euclid_algorithm}
+\end{algorithm}
+\end{verbatim}
+\hrulefill
+\caption{Euclid's algorithm, written in algorithmic.}
+\label{fig:algorithm_sample}
+\end{figure}
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+\State $r\gets a\bmod b$
+\State $a\gets b$
+\State $b\gets r$
+\State $r\gets a\bmod b$
+\State \textbf{return} $b$\Comment{The gcd is b}
+\EndProcedure
+\end{algorithmic}
+\caption{Euclid's Algorithm}
+\label{algo:euclid_algorithm}
+\end{algorithm}
+
 \chapter{Equations}
 
 %====== Auto-Insert Chapter for References =======
