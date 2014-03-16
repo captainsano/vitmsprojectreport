@@ -1,3 +1,4 @@
+
 %
 % LaTeX Class File for VIT MS Final Year Project Report
 %
@@ -37,6 +38,7 @@
 \RequirePackage{algorithm2e}
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
+\RequirePackage{multirow}
 % To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
