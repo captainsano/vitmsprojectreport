@@ -530,6 +530,282 @@ Another informal way of defining algorithms is to use an enumeration list, suppo
 
 \chapter{Equations}
 
+Example of equations have been listed below. Refer to the document source code for more.
+
+\section{Inline}
+
+$\sum$ - Inline equation symbols  can be inserted with the help of \verb+$ ... $+
+
+\section{More examples}
+
+$\forall x \in X, \quad \exists y \leq \epsilon$
+
+\subsection{Greek Characters}
+
+$\alpha, \beta, \gamma, \pi, \Pi, \phi, \varphi, \Phi$
+
+\subsection{Operator}
+
+$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$
+
+\section{Subscript/Superscript}
+
+$\lim_{x \to \infty} \exp(-x) = 0$ \\
+$k_{n+1} = n^2 + k_n^2 - k_{n-1}$
+
+\section{Fractions and Binomials}
+
+$\frac{n!}{k!(n-k)!} = \binom{n}{k}$ \\
+
+$${n! \over k!(n-k)!} = {n \choose k}$$
+
+\section{Equation Environment}
+
+Things put into the \verb+\begin{equation}...\end{equation}+ environment will automatically be numbered and can be referred like~\ref{equation:equation_sample}.
+
+\begin{equation}
+	\label{equation:equation_sample}
+	\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+\end{equation}
+
+\section{Fractions}
+
+\subsection{Inline}
+
+Fractions can be inline like:\\
+Take $\sfrac{1}{2}$ cup of sugar, $\dots$ $3\times\sfrac{1}{2}=1\sfrac{1} {2}$ \\
+Take ${}^1/_2$ cup of sugar, $\dots$ $3\times{}^1/_2=1{}^1/_2$
+
+\subsection{Continued Fractions}
+
+\begin{equation}
+	x = a_0 + \cfrac{1}{a_1
+		     + \cfrac{1}{a_2
+		     + \cfrac{1}{a_3 + a_4}}}
+\end{equation}
+
+\subsection{Multiplication of two numbers}
+To make multiplication visually similar to a fraction, a nested array can be used, for example multiplication of numbers written one below the other.
+
+\begin{equation}
+	\frac{
+	\begin{array}[b]{r}
+		\left( x_1 x_2 \right)\\
+		\times \left( x'_1 x'_2 \right)
+	\end{array}
+	} {
+		\left( y_1y_2y_3y_4 \right)
+	}
+\end{equation}
+
+\section{Fermat numbers}
+Numbers of the form $2^{2^n}+1$, where $n$ is a natural number, are called Fermat numbers
+
+\pagebreak
+\section{Roots}
+
+$$
+2\sqrt{2}\,, \\
+\quad 2^2\sqrt{2-\sqrt{2}}\,, \\
+\quad 2^3 \sqrt{2-\sqrt{2+\sqrt{2}}}\,, \\
+$$
+
+$$
+\quad 2^4\sqrt{2-\sqrt{2+\sqrt{2+\sqrt{2+\sqrt{2}}}}}\, \ldots 
+$$
+
+\section{Mathematical Symbols}
+circ symbol: $x \circ y = x+y-xy$ \\
+box symbol: $x \mathbin \Box y = x^2+y^2$
+
+\section{Sample Vectors}
+\verb+$\vect$+ can be used to generate sample vectors $\vect$ \\
+Variable name as a parameter \verb+$\expres{a}$+ generates $\expres{a}$ \\
+\verb+$\vecto{a}{p}$+, generates $\vecto{a}{p}$
+
+\section{More Mathematics}
+
+Remove equation numbers with \verb+\begin{equation*}...\end{equation*}+.
+
+\begin{equation*}
+	ax+by+c=0
+\end{equation*}
+
+\begin{equation*}
+	x\le|x|\quad\text{and}\quad x\ge|x|
+\end{equation*}
+and so
+\begin{equation*}
+	x\le|x|\quad\text{for all $x$ in $R$}.
+\end{equation*}
+
+Use \verb+\begin{multiline}...\end{multiline}+ if your equation has to span multiple lines~\ref{equation:multiline}. Similar to the equation environment, equation numbers can be removed in multiline with \verb+\begin{multiline*}..\end{multiline*}+. Including \verb+\split+ inside the multiline gives you a better alignment by splitting the equation into LHS and RHS\footnote{A few more examples have been commented out in the source code so that it doesn't look overwhelming to you! Check out the source code, you may find what you need.} The various type of equations and techniques to arrange/align them are given the following sections.
+
+\subsection{Multiline Equations}
+
+\begin{multline}
+	(a+b+c+d+e)^2=a^2+b^2+c^2+d^2+e^2\\
+			+2ab+2ac+2ad+2ae+2bc+2bd\\
+			+2be+2cd+2ce+2de\\
+	\label{equation:multiline}
+\end{multline}
+
+\begin{multline*}
+	(a+b+c+d+e+f)^2=a^2+b^2+c^2+d^2+e^2+f^2\\
+					+2ab+2ac+2ad+2ae+2af\\
+					+2bc+2bd+2be+2bf\\
+					+2cd+2ce+2cf\\
+					+2de+2df\\
+					+2ef\\
+\end{multline*}
+
+\begin{equation*}
+	\begin{split}
+		(a+b+c+d+e+f)^2 & = a^2+b^2+c^2+d^2+e^2+f^2\\
+					   &\quad +2ab+2ac+2ad+2ae+2af\\
+					   &\quad +2bc+2bd+2be+2bf\\
+					   &\quad +2cd+2ce+2cf\\
+					   &\quad +2de+2df\\
+					   &\quad +2ef\\
+	\end{split}
+\end{equation*}
+
+\begin{equation*}
+	\begin{split}
+		(a+b)^2 & = (a+b)(a+b)\\
+			& = a^2+ab+ba+b^2\\
+			& = a^2+2ab+b^2
+	\end{split}
+\end{equation*}
+
+% Align based on '=' with two parts of equation
+%\begin{align*}
+%\cos^2x+\sin^2x & = 1 & \cosh^2x-\sinh^2x & = 1\\
+%\cos^2x-\sin^2x & = \cos 2x & \cosh^2x+\sinh^2x & = \cosh 2x
+%\end{align*}
+%
+%\begin{align*}
+%\cos^2x+\sin^2x & = 1 &\qquad \cosh^2x-\sinh^2x & = 1\\
+%\cos^2x-\sin^2x & = \cos 2x &\qquad \cosh^2x+\sinh^2x & = \cosh 2x
+%\end{align*}
+%
+
+\subsection{Cases}
+\begin{equation*}
+|x| =
+\begin{cases}
+x & \text{if $x\ge 0$}\\
+-x & \text{if $x\le 0$}
+\end{cases}
+\end{equation*}
+
+
+\subsection{Matrices}
+
+The system of equations
+\begin{align*}
+x+y-z & = 1\\
+x-y+z & = 1\\
+x+y+z & = 1
+\end{align*}
+can be written in matrix terms as
+\begin{equation*}
+\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\\
+1\\
+1
+\end{pmatrix}.
+\end{equation*}
+Here, the matrix
+$\begin{pmatrix}
+1 & 1 & -1\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}$
+is invertible.
+\\[2em]
+A Bracket Matrix:
+$
+\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix}
+$
+
+\begin{equation*}
+\begin{vmatrix}
+a & b\\
+c & d
+\end{vmatrix}
+=ad -bc
+\end{equation*}
+
+\begin{equation*}
+\begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1n}\\
+a_{21} & a_{22} & \dots & a_{2n}\\
+\hdotsfor{4}\\
+a_{m1} & a_{m2} & \dots & a_{mn}
+\end{pmatrix}
+\end{equation*}
+
+$
+\left|\begin{smallmatrix}
+a & h & g\\
+h & b & f\\
+g & f & c
+\end{smallmatrix}\right|
+=0
+$,
+the matrix
+$
+\left(\begin{smallmatrix}
+a & h & g\\
+h & b & f\\
+g & f & c
+\end{smallmatrix}\right)
+$
+is not invertible.
+
+\subsection{Symbols with alignment}
+
+\begin{equation*}
+\left.
+\begin{aligned}
+u_x & = v_y\\
+u_y & = -v_x
+\end{aligned}
+\right\}
+\quad\text{Cauchy-Riemann Equations}
+\end{equation*}
+
+\subsection{Summations}
+
+\begin{equation*}
+\left(\sum_{k=1}^n|x_ky_k|\right)^2\le
+\left(\sum_{k=1}^{n}|x_k|\right)\left(\sum_{k=1}^{n}|y_k|\right)
+\end{equation*}
+
+\subsection{Limits and Integrals}
+
+$\lim\limits_{x\to\infty}\int_0^x\frac{\sin x}{x}\,\mathrm{d}x
+=\frac{\pi}{2}$
+and so by definition,
+\begin{equation*}
+\int_0^\infty\frac{\sin x}{x}\,\mathrm{d}x=\frac{\pi}{2}
+\end{equation*}
+
 %====== Auto-Insert Chapter for References =======
 \insertreferences{Example}
 %=================================================
