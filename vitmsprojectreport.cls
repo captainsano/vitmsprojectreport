@@ -318,6 +318,7 @@
   \tableofcontents  % Table Of Contents
   \listoffigures    % List of Figures
   \listoftables     % List of Tables
+  \clearpage
 
   \setcounter{page}{1}
   \pagenumbering{arabic}
