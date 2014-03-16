@@ -527,6 +527,355 @@ Another informal way of defining algorithms is to use an enumeration list, suppo
 
 \chapter{Tables}
 
+Tables are created with the tabular environment. The following sections illustrate the various types of tables.
+
+\section{A Simple Table}
+
+Tables that just present key-values are best suited for the plain layout.
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{lc}
+\hline\noalign{\smallskip}
+Concepts & Ground truth [no img.]\\
+\hline\noalign{\smallskip}
+\noalign{\smallskip} \hline \noalign{\smallskip}
+lion & 102\\
+water & 1081\\
+grass & 1064\\
+building & 1271\\
+car & 182\\
+cloud & 708\\
+rock & 922\\
+tiger & 102\\
+elephant & 109\\
+flower & 730\\
+\hline\noalign{\smallskip}
+\noalign{\smallskip} \hline \noalign{\smallskip}
+boat &  234\\
+flower fields & 32\\
+modern city view & 168\\
+rural garden & 182\\
+mountain view & 598\\
+waterfalls & 15\\
+wild life & 322\\
+city street & 191\\
+\hline
+\end{tabular}
+\caption{Number of images in 18 concepts according to ground truth.}
+\label{table:groundtr}
+\end{center}
+\end{table}
+
+\section{A Somewhat Big Table}
+
+\begin{table*}[htb]
+\begin{center}
+\caption{Concept detection accuracy} \label{t:evaluation}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c}
+\hline \multicolumn{1}{|c|}{\scriptsize{\begin{tabular}{c}
+Training\\set\\proportion(\%)\\
+\end{tabular}}}&\multicolumn{4}{|c|}{\scriptsize{5 supported concepts}}&\multicolumn{4}{|c|}{\scriptsize{10 supported concepts}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{10}}&
+\multicolumn{1}{|c|}{\scriptsize{52.06\%}}&
+\multicolumn{1}{|c|}{\scriptsize{51.28\%}}&
+\multicolumn{1}{|c|}{\scriptsize{33.73\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{57.77}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{45.18\%}}&
+\multicolumn{1}{|c|}{\scriptsize{29.10\%}}&
+\multicolumn{1}{|c|}{\scriptsize{21.98\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{49.26}\%}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{30}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{64.60}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{63.77\%}}&
+\multicolumn{1}{|c|}{\scriptsize{27.21\%}}&
+\multicolumn{1}{|c|}{\scriptsize{62.99\%}}&
+\multicolumn{1}{|c|}{\scriptsize{56.49\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{56.99}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{21.15\%}}&
+\multicolumn{1}{|c|}{\scriptsize{52.53\%}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{50}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{70.67}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{69.58\%}}&
+\multicolumn{1}{|c|}{\scriptsize{25.45\%}}&
+\multicolumn{1}{|c|}{\scriptsize{63.72\%}}&
+\multicolumn{1}{|c|}{\scriptsize{61.88\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{62.37}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{19.76\%}}&
+\multicolumn{1}{|c|}{\scriptsize{50.25\%}}\\
+\hline \hline \multicolumn{1}{|c|}{\scriptsize{Method}}&
+\multicolumn{1}{|c|}{\scriptsize{SVM}}&
+\multicolumn{1}{|c|}{\scriptsize{GA}}&
+\multicolumn{1}{|c|}{\scriptsize{SOM}}&
+\multicolumn{1}{|c|}{\scriptsize{PSO}}&
+\multicolumn{1}{|c|}{\scriptsize{SVM}}&
+\multicolumn{1}{|c|}{\scriptsize{GA}}&
+\multicolumn{1}{|c|}{\scriptsize{SOM}}&
+\multicolumn{1}{|c|}{\scriptsize{PSO}}\\
+\hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+\section{A Ver Big Table}
+
+\begin{table}[htb]
+\begin{center}
+\caption{Retrieval Precision for each Concept from Corel Database}
+\label{tab:comparison}
+\begin{tabular}{|l|l|l|l|l|l|l|} \hline
+\multicolumn{1}{|c|} {\scriptsize{Concepts}} & \multicolumn{1}{|c|}
+{\scriptsize{Methods}} &
+\multicolumn{5}{|c|} {\scriptsize{Retrieval Precision}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Building}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{42\%}} &
+\multicolumn{1}{|c|}{\scriptsize{34\%}} &
+\multicolumn{1}{|c|}{\scriptsize{41\%}} &
+\multicolumn{1}{|c|}{\scriptsize{42\%}} &
+\multicolumn{1}{|c|}{\scriptsize{44\%}} \\
+
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{46\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{75\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{53\%}} &
+\multicolumn{1}{|c|}{\scriptsize{50\%}} &
+\multicolumn{1}{|c|}{\scriptsize{47\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{\bf{52\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{68\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{73\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{75\%}}}
+& \multicolumn{1}{|c|}{\scriptsize{\bf{76\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Car}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{31\%}} &
+\multicolumn{1}{|c|}{\scriptsize{33\%}} &
+\multicolumn{1}{|c|}{\scriptsize{27\%}} &
+\multicolumn{1}{|c|}{\scriptsize{28\%}} & \multicolumn{1}{|c|}{\scriptsize{31\%}} \\
+
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{\bf{58\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{74\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{67\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{68\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{56\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{44\%}} &
+\multicolumn{1}{|c|}{\scriptsize{54\%}} &
+\multicolumn{1}{|c|}{\scriptsize{63\%}} &
+\multicolumn{1}{|c|}{\scriptsize{64\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{66\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Cloud}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{39\%}} &
+\multicolumn{1}{|c|}{\scriptsize{40\%}} &
+\multicolumn{1}{|c|}{\scriptsize{41\%}} &
+\multicolumn{1}{|c|}{\scriptsize{42\%}} & \multicolumn{1}{|c|}{\scriptsize{44\%}} \\
+
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{\bf{80\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{92\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{73\%}} &
+\multicolumn{1}{|c|}{\scriptsize{70\%}} &
+\multicolumn{1}{|c|}{\scriptsize{69\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{53\%}} &
+\multicolumn{1}{|c|}{\scriptsize{68\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{75\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{75\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{77\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Grass}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{41\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{26\%}} &
+\multicolumn{1}{|c|}{\scriptsize{34\%}} &
+\multicolumn{1}{|c|}{\scriptsize{26\%}} & \multicolumn{1}{|c|}{\scriptsize{37\%}} \\
+
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{27\%}} &
+\multicolumn{1}{|c|}{\scriptsize{42\%}} &
+\multicolumn{1}{|c|}{\scriptsize{28\%}} &
+\multicolumn{1}{|c|}{\scriptsize{24\%}} &
+\multicolumn{1}{|c|}{\scriptsize{27\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{40\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{57\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{62\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{65\%}}}
+& \multicolumn{1}{|c|}{\scriptsize{\bf{68\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Elephant}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{31\%}} &
+\multicolumn{1}{|c|}{\scriptsize{38\%}} &
+\multicolumn{1}{|c|}{\scriptsize{36\%}} &
+\multicolumn{1}{|c|}{\scriptsize{34\%}} & \multicolumn{1}{|c|}{\scriptsize{40\%}} \\
+
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{\bf{74\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{96\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{91\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{83\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{96\%}}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{50\%}} &
+\multicolumn{1}{|c|}{\scriptsize{70\%}} &
+\multicolumn{1}{|c|}{\scriptsize{78\%}} &
+\multicolumn{1}{|c|}{\scriptsize{81\%}}
+& \multicolumn{1}{|c|}{\scriptsize{83\%}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Lion}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{21\%}} &
+\multicolumn{1}{|c|}{\scriptsize{25\%}} &
+\multicolumn{1}{|c|}{\scriptsize{22\%}} &
+\multicolumn{1}{|c|}{\scriptsize{23\%}} & \multicolumn{1}{|c|}{\scriptsize{25\%}} \\
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{48\%}} &
+\multicolumn{1}{|c|}{\scriptsize{59\%}} &
+\multicolumn{1}{|c|}{\scriptsize{49\%}} &
+\multicolumn{1}{|c|}{\scriptsize{48\%}} &
+\multicolumn{1}{|c|}{\scriptsize{42\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{\bf{53\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{63\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{68\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{71\%}}}
+& \multicolumn{1}{|c|}{\scriptsize{\bf{76\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Tiger}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{36\%}} &
+\multicolumn{1}{|c|}{\scriptsize{29\%}} &
+\multicolumn{1}{|c|}{\scriptsize{40\%}} &
+\multicolumn{1}{|c|}{\scriptsize{32\%}} & \multicolumn{1}{|c|}{\scriptsize{46\%}} \\
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{28\%}} &
+\multicolumn{1}{|c|}{\scriptsize{60\%}} &
+\multicolumn{1}{|c|}{\scriptsize{62\%}} &
+\multicolumn{1}{|c|}{\scriptsize{58\%}} &
+\multicolumn{1}{|c|}{\scriptsize{52\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{\bf{58\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{73\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{78\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{77\%}}}
+& \multicolumn{1}{|c|}{\scriptsize{\bf{76\%}}} \\
+
+\hline
+
+\multirow{3}{*}{\scriptsize{Average}} & \scriptsize{SOM} &
+\multicolumn{1}{|c|}{\scriptsize{34\%}} &
+\multicolumn{1}{|c|}{\scriptsize{32\%}} &
+\multicolumn{1}{|c|}{\scriptsize{34\%}} &
+\multicolumn{1}{|c|}{\scriptsize{32\%}} &
+\multicolumn{1}{|c|}{\scriptsize{38\%}} \\
+
+& \scriptsize{SVM} & \multicolumn{1}{|c|}{\scriptsize{\bf{51\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{71\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{60\%}} &
+\multicolumn{1}{|c|}{\scriptsize{57\%}} &
+\multicolumn{1}{|c|}{\scriptsize{55\%}} \\
+
+& \scriptsize{PSO} & \multicolumn{1}{|c|}{\scriptsize{50\%}} &
+\multicolumn{1}{|c|}{\scriptsize{64\%}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{71\%}}} &
+\multicolumn{1}{|c|}{\scriptsize{\bf{72\%}}}
+& \multicolumn{1}{|c|}{\scriptsize{\bf{74\%}}} \\
+
+\hline \hline
+\multicolumn{2}{|c|}{\scriptsize{User Iteration}} &
+\multicolumn{1}{|c|}{\scriptsize{1}} &
+\multicolumn{1}{|c|}{\scriptsize{2}} &
+\multicolumn{1}{|c|}{\scriptsize{3}} &
+\multicolumn{1}{|c|}{\scriptsize{4}} &
+\multicolumn{1}{|c|}{\scriptsize{5}} \\
+\hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Rotated Table}
+
+When you want a horizontally big table to be placed, you have to rotate it\footnote{It is recommended not to span tables across multiple pages, especially when it is being rotated. In case a big data sheet is to be placed, print it separately and attach it to an appendix at the end of your report}. Placing a table inside of the \verb+\begin{sidewaystable}..\end{sidewaystable}+ environment, instead of the \verb+\table+ environment renders it $90^\circ$ counter-clockwise rotated. Note that the caption is also rotated.
+
+\begin{sidewaystable}[htb]
+\begin{center}
+\caption{Concept detection accuracy with 15 concepts.} \label{t:evaluation}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline \multicolumn{1}{|c|}{\scriptsize{\begin{tabular}{c}
+Training\\set\\proportion(\%)\\
+\end{tabular}}}&\multicolumn{4}{|c|}{\scriptsize{5 supported concepts}}&\multicolumn{4}{|c|}{\scriptsize{10 supported concepts}}&\multicolumn{4}{|c|}{\scriptsize{15 supported concepts}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{10}}&
+\multicolumn{1}{|c|}{\scriptsize{52.06\%}}&
+\multicolumn{1}{|c|}{\scriptsize{51.28\%}}&
+\multicolumn{1}{|c|}{\scriptsize{33.73\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{57.77}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{45.18\%}}&
+\multicolumn{1}{|c|}{\scriptsize{29.10\%}}&
+\multicolumn{1}{|c|}{\scriptsize{21.98\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{49.26}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{41.87\%}}&
+\multicolumn{1}{|c|}{\scriptsize{37.88\%}}&
+\multicolumn{1}{|c|}{\scriptsize{9.87\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{43.80}\%}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{30}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{64.60}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{63.77\%}}&
+\multicolumn{1}{|c|}{\scriptsize{27.21\%}}&
+\multicolumn{1}{|c|}{\scriptsize{62.99\%}}&
+\multicolumn{1}{|c|}{\scriptsize{56.49\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{56.99}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{21.15\%}}&
+\multicolumn{1}{|c|}{\scriptsize{52.53\%}}&
+\multicolumn{1}{|c|}{\scriptsize{53.76\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{53.85}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{20.69\%}}&
+\multicolumn{1}{|c|}{\scriptsize{47.85\%}}\\
+\hline \multicolumn{1}{|c|}{\scriptsize{50}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{70.67}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{69.58\%}}&
+\multicolumn{1}{|c|}{\scriptsize{25.45\%}}&
+\multicolumn{1}{|c|}{\scriptsize{63.72\%}}&
+\multicolumn{1}{|c|}{\scriptsize{61.88\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{62.37}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{19.76\%}}&
+\multicolumn{1}{|c|}{\scriptsize{50.25\%}}&
+\multicolumn{1}{|c|}{\scriptsize{59.05\%}}&
+\multicolumn{1}{|c|}{\scriptsize{\bf{59.91}\%}}&
+\multicolumn{1}{|c|}{\scriptsize{20.87\%}}&
+\multicolumn{1}{|c|}{\scriptsize{47.03\%}}\\
+\hline \hline \multicolumn{1}{|c|}{\scriptsize{Method}}&
+\multicolumn{1}{|c|}{\scriptsize{SVM}}&
+\multicolumn{1}{|c|}{\scriptsize{GA}}&
+\multicolumn{1}{|c|}{\scriptsize{SOM}}&
+\multicolumn{1}{|c|}{\scriptsize{PSO}}&
+\multicolumn{1}{|c|}{\scriptsize{SVM}}&
+\multicolumn{1}{|c|}{\scriptsize{GA}}&
+\multicolumn{1}{|c|}{\scriptsize{SOM}}&
+\multicolumn{1}{|c|}{\scriptsize{PSO}}&
+\multicolumn{1}{|c|}{\scriptsize{SVM}}&
+\multicolumn{1}{|c|}{\scriptsize{GA}}&
+\multicolumn{1}{|c|}{\scriptsize{SOM}}&
+\multicolumn{1}{|c|}{\scriptsize{PSO}}\\
+\hline
+\end{tabular}
+\end{center}
+\end{sidewaystable}
+
 \chapter{Equations}
 
 Example of equations have been listed below. Refer to the document source code for more.
