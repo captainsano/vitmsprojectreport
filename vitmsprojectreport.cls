@@ -40,6 +40,18 @@
 % To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
+% Packages for Equation
+\RequirePackage{amsmath}
+\RequirePackage{mathtools}
+\RequirePackage{xfrac}
+\RequirePackage{nicefrac}
+\RequirePackage{amssymb}
+
+% Declare Shorthands for Equations
+\newcommand{\vect}{(x_1,x_2,\dots,x_n)}
+\newcommand{\expres}[1]{(#1_1,#1_2,\dots,#1_n)}
+\newcommand{\vecto}[2]{(#1_1,#1_2,\dotsc,#1_#2)}
+
 % These three commands make up the "Times New Roman" font
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\rmdefault}{ptm}
