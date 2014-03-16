@@ -38,7 +38,7 @@
 \RequirePackage{algorithm2e}
 \RequirePackage{algorithmicx}
 \RequirePackage{algpseudocode}
-\RequirePackage{multirow}
+
 % To put a numbered chapter for bibliography:
 \RequirePackage[nottoc,notlof,notlot,numbib]{tocbibind}
 
@@ -48,6 +48,10 @@
 \RequirePackage{xfrac}
 \RequirePackage{nicefrac}
 \RequirePackage{amssymb}
+
+% Packages for Table
+\RequirePackage{multirow}
+\RequirePackage{rotating}
 
 % Declare Shorthands for Equations
 \newcommand{\vect}{(x_1,x_2,\dots,x_n)}
