@@ -161,6 +161,14 @@
 % Plain bibliography style
 \bibliographystyle{plain}
 
+% A new table environment with extra padding: padded table. Position fixed at HTB
+\newenvironment{paddedtable}
+               {\@float{table}[htb]\setlength{\tabcolsep}{10pt}\def\arraystretch{1.75}}
+               {\end@float}
+\newenvironment{paddedtable*}
+               {\@dblfloat{table}[htb]}
+               {\end@dblfloat}
+
 %==========================================================================
 %                                                                         %
 %                                Macros                                   %
