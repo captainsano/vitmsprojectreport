@@ -69,6 +69,10 @@
     allbordercolors={1 1 1},
 }
 
+% Avoid hyphenation to a great degree
+\hyphenpenalty=5000
+\tolerance=1000
+
 % Set to 1.5 line spacing
 \setstretch{1.5}
 
