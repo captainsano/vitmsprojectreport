@@ -234,7 +234,7 @@
   \hyphenpenalty 10000
   \exhyphenpenalty 10000
   \noindent
-  I here by declare that the project report titled, \textbf{``\vitprojecttitle''} submitted by me to VIT University, Vellore in partial fulfilment of the requirement for the award of the degree of \textbf{M.S. (Software Engineering)} is a record of bonafide project work carried out by me under the guidance of \textbf{\vitguidename~(\vitguidetitle)}. I further declare that the work reported in this project has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.
+  I here by declare that the project report titled, \textbf{``\vitprojecttitle''} submitted by me to VIT University, Vellore in partial fulfilment of the requirement for the award of the degree of \textbf{M.S. (Software Engineering)} is a record of bonafide project work carried out by me under the guidance of \textbf{\mbox{\vitguidename} (\vitguidetitle)}. I further declare that the work reported in this project has not been submitted and will not be submitted, either in part or in full, for the award of any other degree or diploma in this institute or any other institute or university.
   \endgroup
 
   \noindent
@@ -302,9 +302,9 @@
   \bfseries\fontsize{14}{16.8}\selectfont\uline{Acknowledgements}
   \end{center}
 
-  I take immense pleasure in thanking \textbf{Dr. G. Viswanathan}, my beloved chancellor, VIT University, \textbf{#1}, dean, School Of Information Technology and Engineering, \textbf{#2}, Program Manager, M.S. Software Engineering and \textbf{#3}, project coordinator, M.S. Software Engineering for having permitted me to carry out the project.
+  I take immense pleasure in thanking \textbf{Dr. G. Viswanathan}, my beloved chancellor, VIT University, \textbf{#1}, dean, School Of Information Technology and Engineering, \mbox{\textbf{#2}}, Program Manager, M.S. Software Engineering and \mbox{\textbf{#3}}, project coordinator, M.S. Software Engineering for having permitted me to carry out the project.
 
-  I express gratitude to my guide, \textbf{\vitguidename}, for guidance and suggestions that helped me to complete the project on time. Words are inadequate to express my gratitude to the faculty and staff members who encouraged and supported me during the project. Finally, I would like to thank my ever-loving parents for their blessings and my friends for their timely help and support.
+  I express gratitude to my guide, \textbf{\mbox{\vitguidename}}, for guidance and suggestions that helped me to complete the project on time. Words are inadequate to express my gratitude to the faculty and staff members who encouraged and supported me during the project. Finally, I would like to thank my ever-loving parents for their blessings and my friends for their timely help and support.
 
   \clearpage
 }
