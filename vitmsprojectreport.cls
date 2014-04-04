@@ -100,8 +100,8 @@
 \fancypagestyle{plain}{
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead{}
-\fancyfoot[R]{\textcolor{gray}{\thepage}}
+\fancyhead[R]{\textcolor{gray}{\thepage}}
+\fancyfoot{}
 }
 
 \pagestyle{plain}	% Set the page style for all the pages
