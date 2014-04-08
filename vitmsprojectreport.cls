@@ -306,7 +306,7 @@
   \bfseries\fontsize{14}{16.8}\selectfont\uline{Acknowledgements}
   \end{center}
 
-  I take immense pleasure in thanking \textbf{Dr. G. Viswanathan}, my beloved chancellor, VIT University, \textbf{#1}, dean, School Of Information Technology and Engineering, {\hyphenpenalty=10000\textbf{#2}}, Program Manager, M.S. Software Engineering and {\hyphenpenalty=100000\textbf{#3}}, project coordinator, M.S. Software Engineering for having permitted me to carry out the project.
+  I take immense pleasure in thanking \textbf{Dr. G. Viswanathan}, my beloved Chancellor, VIT University, \textbf{#1}, Dean, School Of Information Technology and Engineering, {\hyphenpenalty=10000\textbf{#2}}, Program Manager, M.S. Software Engineering and {\hyphenpenalty=100000\textbf{#3}}, Project coordinator, M.S. Software Engineering for having permitted me to carry out the project.
 
   I express gratitude to my guide, \textbf{\hyphenpenalty=10000{\vitguidename}}, for guidance and suggestions that helped me to complete the project on time. Words are inadequate to express my gratitude to the faculty and staff members who encouraged and supported me during the project. Finally, I would like to thank my ever-loving parents for their blessings and my friends for their timely help and support.
 
