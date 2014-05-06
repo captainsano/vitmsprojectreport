@@ -93,7 +93,7 @@
 }
 
 % A4 Paper and Required Margin for one-side printing
-\RequirePackage[a4paper, top=2cm, bottom=2cm, left=4.0cm, right=2cm]{geometry}
+\RequirePackage[a4paper, top=2.25cm, bottom=2.25cm, left=4.0cm, right=2cm]{geometry}
 
 % Page Number on Bottom Right
 \RequirePackage{fancyhdr}
